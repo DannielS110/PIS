@@ -59,24 +59,23 @@
                 <input type="range" id="pinza" name="pinza" min="0" max="180" value="90">
                 <span id="anguloPin">{{ pinza }}</span>
 
-                <div id="car-buttons">
-                    <button id="forward" type="button">
-                        <span class="material-symbols-outlined">arrow_circle_up</span>
-                    </button>
-                    <button id="backward" type="button">
-                        <span class="material-symbols-outlined">arrow_circle_down</span>
-                    </button>
-                    <button id="right" type="button">
-                        <span class="material-symbols-outlined">arrow_circle_right</span>
-                    </button>
-                    <button id="left" type="button">
-                        <span class="material-symbols-outlined">arrow_circle_left</span>
-                    </button>
+                <div id="car-controls">
+                    <div class="car-buttons-grid">
+                        <button id="forward" type="button" class="car-button">
+                            <svg viewBox="0 0 24 24" class="arrow-icon"><path d="M12 2L4 10h6v12h4V10h6z"/></svg>
+                        </button>
+                        <button id="left" type="button" class="car-button">
+                            <svg viewBox="0 0 24 24" class="arrow-icon"><path d="M10 4L2 12l8 8v-6h12v-4H10z"/></svg>
+                        </button>
+                        <button id="right" type="button" class="car-button">
+                            <svg viewBox="0 0 24 24" class="arrow-icon"><path d="M14 4l8 8-8 8v-6H2v-4h12z"/></svg>
+                        </button>
+                        <button id="backward" type="button" class="car-button">
+                            <svg viewBox="0 0 24 24" class="arrow-icon"><path d="M12 22l8-8h-6V2h-4v12H4z"/></svg>
+                        </button>
+                    </div>
+                    <button id="reset" type="reset" class="reset-button">Limpiar</button>
                 </div>
-    
-                <button id="reset" type="reset">Limpiar</button>
-            </form>    
-        </div>
     </section>
 {% endblock %}
 
